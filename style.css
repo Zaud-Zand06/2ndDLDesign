@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+* {
+    font-family: Ceviche One;
+    text-decoration: none;
+    list-style: none;
+    margin: none;
+    padding: none;
+    background-color: rgb(67, 58, 58);
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.header {
+    background-color: red;
+    height: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header > img {
+    height: 4rem;
+}
+
+#ordering-buttons {
+    background-color: red;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+#ordering-buttons > a {
+    font-size: 28px;
+    color: white;
+    background-color: red;
+    
+}
+
+.header > a {
+    font-size: 28px;
+    color: white;
+    background-color: red;
+}
+
+.home {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    background-color: bisque;
+}
+
+.img-containers {
+    display: grid;
+    
+}
+
+.img-card > img {
+    max-height: 5rem;
+    max-width: 5rem;
+}
+
+#about-us {
+    font-size: 2rem;
+    color: white;
+    background-color: red;
+}
+
+#about-us > * {
+    background-color: red;
+}
