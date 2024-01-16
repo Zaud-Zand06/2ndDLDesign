@@ -93,12 +93,34 @@ body {
     object-fit: cover;
 }
 
-#about-us {
+.about-us {
     font-size: 2rem;
     color: white;
     background-color: red;
 }
 
-#about-us > * {
+.about-us > * {
     background-color: red;
+
+}
+
+.footer, .locations, .contact, .information {
+    background-color: red;
+}
+
+p {
+    background-color: red;
+    color: white;
+}
+
+.contact > a {
+    background-color: red;
+    color: white;
+    flex-grow: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
