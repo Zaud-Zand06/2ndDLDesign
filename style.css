@@ -61,7 +61,6 @@ body {
     display: flex;
     flex-flow: column nowrap;
     height: 100vh;
-    background-color: bisque;
     margin-top: 5px;
 }
 
