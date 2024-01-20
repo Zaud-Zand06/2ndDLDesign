@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: Ceviche One;
-    background-color: #C0D8C0;
+    background-color: #1e2d1e;
     text-decoration: none;
   }
 
@@ -38,6 +38,7 @@
   .col-9 {
     width: 75%;
     font-size: larger;
+    color: #F5EEDC;
 }
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
@@ -109,3 +110,12 @@
     justify-content: center;
     align-items: center;
   }
+
+  .buttons {
+    border-radius: 5px;
+    background-color: #1e2d1e;
+    height: 9%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
