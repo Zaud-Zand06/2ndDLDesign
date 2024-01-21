@@ -78,6 +78,23 @@
     background-color: #DD4A48;
   }
 
+  .img-container {
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .large-image {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  
+  .small-image-1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
   .menu {
     width: 20%;
     height: 30%;
