@@ -70,11 +70,11 @@ h1 {
 
 .inline-snaps {
     scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 4%;
 }
 
-.inline-snaps > * {
+.inline-snaps>* {
     scroll-snap-align: start;
-    scroll-padding-inline: 4%;
 }
 
 .scroll-images {
