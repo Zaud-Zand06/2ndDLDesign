@@ -54,9 +54,14 @@ h1 {
 .menu-body {
     display: flex;
     flex-direction: column;
+    margin-top: 5dvh;
     margin-left: 25dvh;
     margin-right: 25dvh;
     width: 150dvh;
+}
+
+.menu-body img {
+    border-radius: 20px;
 }
 
 .site-body {
