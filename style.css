@@ -185,8 +185,7 @@ img.special-img {
     border-radius: 20px;
     margin-top: 2dvh;
     margin-bottom: 3dvh;
-    margin-left: 8dvh;
-    margin-right: 8dvh;
+    width: 95%;
     padding: 1dvh;
 }
 
