@@ -180,7 +180,7 @@ h2 {
 .scroll-images {
     padding: 4%;
     margin: 4%;
-    max-height: auto;
+    max-height: fit-content;
     display: grid;
     grid-template-rows: min-content;
     align-items: center;
