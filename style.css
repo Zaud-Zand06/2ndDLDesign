@@ -158,7 +158,7 @@ h2 {
 }
 
 .img-container {
-    width: 100%;
+    width: 100lvw;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 30%;
@@ -178,7 +178,6 @@ h2 {
 .scroll-images {
     padding: 4%;
     margin: 4%;
-    max-height: auto;
     display: grid;
     grid-template-rows: min-content;
     align-items: center;
