@@ -161,7 +161,7 @@ h2 {
 }
 
 .about-us p {
-    width: 100svw;
+    width: 95svw;
     font-size: calc(15px + 0.390625svw);
 }
 
@@ -269,5 +269,9 @@ img.special-img {
 
     .about-us h1 {
         font-size: 10svw;
+    }
+
+    .about-us {
+
     }
 }
