@@ -203,3 +203,8 @@ img.special-img {
 .footer>*>* {
     font-size: calc(15px + 0.05em);
 }
+
+.secret {
+    color: #e23121;
+    margin-top: 2dvh;
+}
