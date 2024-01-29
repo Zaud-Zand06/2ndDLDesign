@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+body{
+    height: 100%;
+}
+
 a {
     background-color: #dd4b4800;
     color: inherit;
@@ -25,7 +29,6 @@ a:hover {
 p {
     font-family: Poppins sans-serif;
     background-color: #dd4b4800;
-    font-size: calc(15px + 0.390625vw);
 }
 
 img {
@@ -80,7 +83,7 @@ h2 {
 .header h1 {
     margin-top: 2lvh;
     margin-bottom: 2lvh;
-    font-size: 10lvh;
+    font-size: 5lvw;
 }
 
 .monthly-special {
@@ -93,7 +96,7 @@ h2 {
 }
 
 .monthly-special h1 {
-    font-size: 6lvh;
+    font-size: 4lvw;
     margin-bottom: 3lvh;
 }
 
@@ -107,7 +110,7 @@ h2 {
 }
 
 .special-card h2 {
-    font-size: 6lvh;
+    font-size: 3lvw;
     margin-bottom: 2lvh;
 }
 
@@ -127,10 +130,10 @@ h2 {
     color: #F9B572;
     justify-content: space-around;
     align-items: center;
-    margin-left: 2lvh;
-    margin-right: 2lvh;
-    font-size: calc(15px + 1vw);
-    gap: 5lvh;
+    margin-left: 2lvw;
+    margin-right: 2lvw;
+    font-size: calc(16px + 1lvw);
+    gap: 3lvw;
 }
 
 /* .links a {
@@ -146,11 +149,11 @@ h2 {
 }
 
 .about-us h1 {
-    font-size: 6lvh;
+    font-size: 4lvw;
 }
 
 .about-us p {
-    max-width: 100lvh;
+    width: 100lvw;
     font-size: calc(15px + 0.390625vw);
 }
 
@@ -175,12 +178,17 @@ h2 {
 .scroll-images {
     padding: 4%;
     margin: 4%;
+    height: auto;
     display: grid;
     grid-template-rows: min-content;
     align-items: center;
     background: #CDFAD5;
     color: #e23121;
     border-radius: 15px;
+}
+
+.scroll-image-title {
+    font-size: calc(15px + .25lvw);
 }
 
 .scroll-images img {
@@ -216,7 +224,7 @@ img.special-img {
 }
 
 .footer>*>* {
-    font-size: calc(15px + 0.05em);
+    font-size: calc(15px + 0.1lvw);
 }
 
 .secret {
