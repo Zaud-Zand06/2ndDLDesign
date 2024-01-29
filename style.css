@@ -58,7 +58,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2dvh;
+    margin-top: 2lvh;
 }
 
 .site-body {
@@ -78,13 +78,13 @@ h2 {
 }
 
 .header h1 {
-    margin-top: 2dvh;
-    margin-bottom: 2dvh;
-    font-size: 10dvh;
+    margin-top: 2lvh;
+    margin-bottom: 2lvh;
+    font-size: 10lvh;
 }
 
 .monthly-special {
-    margin-top: svh;
+    margin-top: 2lvh;
     padding: 1%;
     color: #F9B572;
     display: flex;
@@ -93,8 +93,8 @@ h2 {
 }
 
 .monthly-special h1 {
-    font-size: 6dvh;
-    margin-bottom: 3dvh;
+    font-size: 6lvh;
+    margin-bottom: 3lvh;
 }
 
 .special-card {
@@ -107,17 +107,17 @@ h2 {
 }
 
 .special-card h2 {
-    font-size: 6dvh;
-    margin-bottom: 2dvh;
+    font-size: 6lvh;
+    margin-bottom: 2lvh;
 }
 
 .special-card p {
-    margin-bottom: 5dvh;
+    margin-bottom: 5lvh;
 }
 
 .monthly-special img {
     inline-size: 100%;
-    padding-bottom: 3dvh;
+    padding-bottom: 3lvh;
     border-radius: 20px;
 }
 
@@ -127,10 +127,10 @@ h2 {
     color: #F9B572;
     justify-content: space-around;
     align-items: center;
-    margin-left: 2dvh;
-    margin-right: 2dvh;
+    margin-left: 2lvh;
+    margin-right: 2lvh;
     font-size: calc(15px + 1vw);
-    gap: 5svh;
+    gap: 5lvh;
 }
 
 /* .links a {
@@ -138,7 +138,7 @@ h2 {
 }  for debugging issues with the clickable links*/
 
 .about-us {
-    margin: 3dvh;
+    margin: 3lvh;
     color: #F9B572;
     display: flex;
     flex-direction: column;
@@ -146,11 +146,11 @@ h2 {
 }
 
 .about-us h1 {
-    font-size: 6dvh;
+    font-size: 6lvh;
 }
 
 .about-us p {
-    max-width: 100dvh;
+    max-width: 100lvh;
     font-size: calc(15px + 0.390625vw);
 }
 
@@ -175,7 +175,6 @@ h2 {
 .scroll-images {
     padding: 4%;
     margin: 4%;
-    height: auto;
     display: grid;
     grid-template-rows: min-content;
     align-items: center;
@@ -200,10 +199,10 @@ img.special-img {
     background-color: #DD4A48;
     justify-content: space-around;
     border-radius: 20px;
-    margin-top: 2dvh;
-    margin-bottom: 3dvh;
+    margin-top: 2lvh;
+    margin-bottom: 3lvh;
     width: 95%;
-    padding: 1dvh;
+    padding: 1lvh;
 }
 
 .footer * {
@@ -213,7 +212,7 @@ img.special-img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.15dvh;
+    gap: 0.15lvh;
 }
 
 .footer>*>* {
@@ -222,5 +221,5 @@ img.special-img {
 
 .secret {
     color: #e23121;
-    margin-top: 2dvh;
+    margin-top: 2lvh;
 }
