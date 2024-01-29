@@ -166,11 +166,6 @@ h2 {
     overscroll-behavior-inline: contain;
 }
 
-@media only screen and (max-width: 500px) {
-    .img-container {
-        grid-auto-columns: 77%;
-    }
-}
 
 .inline-snaps {
     scroll-snap-type: inline mandatory;
@@ -235,4 +230,25 @@ img.special-img {
 .secret {
     color: #e23121;
     margin-top: 2svh;
+}
+@media only screen and (max-width: 500px) {
+    .img-container {
+        grid-auto-columns: 77%;
+    }
+
+    .header h1 {
+        font-size: 15svw;
+    }
+
+    .monthly-special h1 {
+        font-size: 10svw;
+    }
+
+    .monthly-special h2 {
+        font-size: 8svw;
+    }
+
+    .about-us h1 {
+        font-size: 10svw;
+    }
 }
