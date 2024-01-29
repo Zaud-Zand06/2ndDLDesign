@@ -164,6 +164,7 @@ h2 {
     grid-auto-columns: 30%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    border: solid 2px white;
 }
 
 
@@ -185,6 +186,7 @@ h2 {
     background: #CDFAD5;
     color: #e23121;
     border-radius: 15px;
+    border: solid 2px pink;
 }
 
 .scroll-image-title {
