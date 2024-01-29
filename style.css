@@ -6,6 +6,7 @@
     font-family: Ceviche One;
     background-color: #170e32;
     text-decoration: none;
+    margin: 0;
 }
 
 a {
@@ -37,6 +38,13 @@ p {
 }
 
 a {
+    background-color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 15px;
     background-color: inherit;
 }
 
@@ -80,37 +88,46 @@ h1 {
 }
 
 .header h1 {
-    margin-top: 25px;
+    margin-top: 2dvh;
+    margin-bottom: 2dvh;
     font-size: 10dvh;
 }
 
 .monthly-special {
     margin-top: 5%;
+    background: #CDFAD5;
     color: #F9B572;
     display: flex;
+    margin-left: 35dvh;
+    margin-right: 35dvh;
+    border-radius: 25px;
     flex-direction: column;
     align-items: center;
 }
 
 .monthly-special h1 {
+    background-color: inherit;
     font-size: 6dvh;
+    margin-bottom: 3dvh;
 }
 
 .monthly-special h2 {
-    font-size: 4dvh;
+    background-color: inherit;
+    font-size: 6dvh;
+    margin-bottom: 2dvh;
 }
 
 .monthly-special p {
+    background-color: inherit;
     font-size: 3dvh;
+    margin-bottom: 5dvh;
 }
 
 .monthly-special img {
-    padding: 4%;
-    margin: 4%;
     height: auto;
     display: grid;
+    padding-bottom: 3dvh;
     grid-template-rows: min-content;
-    background: #CDFAD5;
     border-radius: 20px;
 }
 
@@ -131,14 +148,17 @@ h1 {
 }
 
 .about-us {
+    margin-top: 5dvh;
     color: #F9B572;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5dvh;
 }
 
 .about-us h1 {
     font-size: 6dvh;
+    margin-bottom: 2dvh;
 }
 
 .about-us p {
@@ -191,8 +211,11 @@ img.special-img {
     display: flex;
     background-color: #DD4A48;
     justify-content: space-around;
-    margin: 3%;
     border-radius: 20px;
+    margin-top: 3dvh;
+    margin-bottom: 3dvh;
+    margin-left: 8dvh;
+    margin-right: 8dvh;
 }
 
 .footer>* {
