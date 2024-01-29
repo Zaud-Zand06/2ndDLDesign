@@ -10,14 +10,9 @@
 }
 
 a {
+    background-color: #dd4b4800;
     color: inherit;
     padding-bottom: 2px;
-    /* background:
-        linear-gradient(to right, #F9B572, #F9B572),
-        linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-    background-size: 100% 0.1em, 0 0.1em;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat; */
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
     text-underline-offset: 5px;
     transition: text-decoration-color 300ms;
@@ -27,55 +22,40 @@ a:hover {
     text-decoration-color: inherit;
 }
 
-/* a:hover,
-a:focus {
-    background-size: 0 0.1em, 100% 0.1em;
-} */
-
 p {
     font-family: Poppins sans-serif;
-    background-color: inherit;
-}
-
-a {
-    background-color: inherit;
+    background-color: #dd4b4800;
+    font-size: calc(15px + 0.390625vw);
 }
 
 img {
     display: block;
     max-width: 100%;
     border-radius: 15px;
-    background-color: inherit;
+    background: #dd4b4800;
 }
 
 h1 {
     color: #e23121;
+    background: #dd4b4800;
 }
 
-.body {
-    display: flex;
-    height: 100%;
-    flex-flow: column nowrap;
-    align-items: center;
+h2 {
+    background-color: #dd4b4800;
 }
 
-.menu-body {
+.menubody {
     display: flex;
     flex-direction: column;
-    margin-top: 5dvh;
-    margin-left: 25dvh;
-    margin-right: 25dvh;
-    width: 150dvh;
-}
-
-.menu-body img {
-    border-radius: 20px;
+    align-items: center;
+    margin-top: 2dvh;
 }
 
 .site-body {
     display: flex;
     flex-direction: column;
     height: auto;
+    align-items: center;
 }
 
 .header {
@@ -95,75 +75,66 @@ h1 {
 
 .monthly-special {
     margin-top: 5%;
+    padding: 1%;
     background: #CDFAD5;
     color: #F9B572;
     display: flex;
-    margin-left: 35dvh;
-    margin-right: 35dvh;
     border-radius: 25px;
     flex-direction: column;
     align-items: center;
 }
 
 .monthly-special h1 {
-    background-color: inherit;
     font-size: 6dvh;
     margin-bottom: 3dvh;
 }
 
 .monthly-special h2 {
-    background-color: inherit;
     font-size: 6dvh;
     margin-bottom: 2dvh;
 }
 
 .monthly-special p {
-    background-color: inherit;
-    font-size: 3dvh;
     margin-bottom: 5dvh;
 }
 
 .monthly-special img {
-    height: auto;
-    display: grid;
+    inline-size: 100%;
     padding-bottom: 3dvh;
-    grid-template-rows: min-content;
     border-radius: 20px;
 }
 
-.menu {
-    width: 100%;
-    height: 30%;
+.links {
     display: flex;
-    flex-grow: 1;
     flex-flow: row nowrap;
     color: #F9B572;
     justify-content: space-around;
     align-items: center;
+    margin-left: 2dvh;
+    margin-right: 2dvh;
+    font-size: calc(15px + 1vw);
+    gap: 5svh;
 }
 
-.menu a {
-    height: auto;
-    font-size: 200%;
-}
+/* .links a {
+    border:  2px solid white;
+}  for debugging issues with the clickable links*/
 
 .about-us {
-    margin-top: 5dvh;
+    margin: 3dvh;
     color: #F9B572;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5dvh;
 }
 
 .about-us h1 {
     font-size: 6dvh;
-    margin-bottom: 2dvh;
 }
 
 .about-us p {
     max-width: 100dvh;
-    font-size: 3dvh;
+    font-size: calc(15px + 0.390625vw);
 }
 
 .img-container {
@@ -212,41 +183,23 @@ img.special-img {
     background-color: #DD4A48;
     justify-content: space-around;
     border-radius: 20px;
-    margin-top: 3dvh;
+    margin-top: 2dvh;
     margin-bottom: 3dvh;
     margin-left: 8dvh;
     margin-right: 8dvh;
+    padding: 1dvh;
 }
 
-.footer>* {
+.footer * {
     background-color: #DD4A48;
     color: #CDFAD5;
-}
-
-.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.15dvh;
 }
 
-.information {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.footer>*>* {
+    font-size: calc(15px + 0.05em);
 }
-
-.locations {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .buttons {
-    border-radius: 5px;
-    height: 9%;
-    padding-left: 5px;
-    padding-right: 5px;
-} */
