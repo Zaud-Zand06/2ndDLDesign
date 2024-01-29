@@ -61,7 +61,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2lvh;
+    margin-top: 2svh;
 }
 
 .site-body {
@@ -81,13 +81,13 @@ h2 {
 }
 
 .header h1 {
-    margin-top: 2lvh;
-    margin-bottom: 2lvh;
-    font-size: 5lvw;
+    margin-top: 2svh;
+    margin-bottom: 2svh;
+    font-size: 5svw;
 }
 
 .monthly-special {
-    margin-top: 2lvh;
+    margin-top: 2svh;
     padding: 1%;
     color: #F9B572;
     display: flex;
@@ -96,8 +96,8 @@ h2 {
 }
 
 .monthly-special h1 {
-    font-size: 4lvw;
-    margin-bottom: 3lvh;
+    font-size: 4svw;
+    margin-bottom: 3svh;
 }
 
 .special-card {
@@ -110,17 +110,17 @@ h2 {
 }
 
 .special-card h2 {
-    font-size: 3lvw;
-    margin-bottom: 2lvh;
+    font-size: 3svw;
+    margin-bottom: 2svh;
 }
 
 .special-card p {
-    margin-bottom: 5lvh;
+    margin-bottom: 5svh;
 }
 
 .monthly-special img {
     inline-size: 100%;
-    padding-bottom: 3lvh;
+    padding-bottom: 3svh;
     border-radius: 20px;
 }
 
@@ -130,10 +130,10 @@ h2 {
     color: #F9B572;
     justify-content: space-around;
     align-items: center;
-    margin-left: 2lvw;
-    margin-right: 2lvw;
-    font-size: calc(16px + 1lvw);
-    gap: 3lvw;
+    margin-left: 2svw;
+    margin-right: 2svw;
+    font-size: calc(16px + 1svw);
+    gap: 3svw;
 }
 
 /* .links a {
@@ -141,7 +141,7 @@ h2 {
 }  for debugging issues with the clickable links*/
 
 .about-us {
-    margin: 3lvh;
+    margin: 3svh;
     color: #F9B572;
     display: flex;
     flex-direction: column;
@@ -149,16 +149,16 @@ h2 {
 }
 
 .about-us h1 {
-    font-size: 4lvw;
+    font-size: 4svw;
 }
 
 .about-us p {
-    width: 100lvw;
-    font-size: calc(15px + 0.390625vw);
+    width: 100svw;
+    font-size: calc(15px + 0.390625svw);
 }
 
 .img-container {
-    width: 100lvw;
+    width: 100svw;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 30%;
@@ -187,7 +187,7 @@ h2 {
 }
 
 .scroll-image-title {
-    font-size: calc(15px + .25lvw);
+    font-size: calc(15px + .25svw);
 }
 
 .scroll-images img {
@@ -206,10 +206,10 @@ img.special-img {
     background-color: #DD4A48;
     justify-content: space-around;
     border-radius: 20px;
-    margin-top: 2lvh;
-    margin-bottom: 3lvh;
+    margin-top: 2svh;
+    margin-bottom: 3svh;
     width: 95%;
-    padding: 1lvh;
+    padding: 1svh;
 }
 
 .footer * {
@@ -219,14 +219,14 @@ img.special-img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.15lvh;
+    gap: 0.15svh;
 }
 
 .footer>*>* {
-    font-size: calc(15px + 0.1lvw);
+    font-size: calc(15px + 0.1svw);
 }
 
 .secret {
     color: #e23121;
-    margin-top: 2lvh;
+    margin-top: 2svh;
 }
