@@ -220,14 +220,15 @@ img.special-img {
 }
 
 .footer {
-    display: flex;
+    display: grid;
     background-color: #DD4A48;
-    justify-content: space-around;
     border-radius: 20px;
     margin-top: 2svh;
     margin-bottom: 3svh;
     width: 95%;
     padding: 1svh;
+    grid-template-columns: repeat(3, auto);
+
 }
 
 .footer * {
