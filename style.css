@@ -74,7 +74,7 @@ h2 {
 .header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 98%;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -268,7 +268,7 @@ img.special-img {
     }
 
     .special-card {
-        max-width: 100%;
+        max-width: 98%;
     }
 
     .about-us h1 {
