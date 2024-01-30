@@ -174,7 +174,6 @@ h2 {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 30%;
-    grid-template-rows: auto;
     overflow-x: auto;
     overflow-y: hidden;
     overscroll-behavior-inline: contain;
@@ -196,15 +195,9 @@ h2 {
     margin: 4%;
     background: #CDFAD5;
     border-radius: 15px;
-    /* max-height: fit-content;
-    display: grid;
-    grid-template-rows: min-content;
-    align-items: center;
-    color: #e23121;
-    border: solid 2px pink; */
 }
 
-/* .scroll-image-title {
+.scroll-image-title {
     position: absolute;
     font-family: Ceviche One;
     font-size: 20px;
@@ -212,7 +205,7 @@ h2 {
     width: 100%;
     text-align: center;
     color: #e23121;
-} */
+}
 
 .scroll-images img {
     inline-size: 100%;
