@@ -202,17 +202,15 @@ h2 {
     border: solid 2px pink; */
 }
 
-.scroll-image-title {
+/* .scroll-image-title {
     position: absolute;
     font-family: Ceviche One;
     font-size: 20px;
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 3svw;
     color: #e23121;
-    letter-spacing: 0.5svw;
-}
+} */
 
 .scroll-images img {
     inline-size: 100%;
