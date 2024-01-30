@@ -170,10 +170,11 @@ h2 {
 }
 
 .img-container {
-    width: 100svw;
+    width: 100%;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 30%;
+    grid-template-rows: auto;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
