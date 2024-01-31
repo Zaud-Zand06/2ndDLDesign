@@ -220,26 +220,36 @@ img.special-img {
 }
 
 .footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #DD4A48;
     border-radius: 20px;
     margin-top: 2svh;
     margin-bottom: 3svh;
     width: 95%;
     padding: 1svh;
-    grid-template-columns: repeat(3, auto);
+}
+.accordion {
+    font-size: calc(15px + 1svw);
+}
 
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #DD4A48;
+    max-height: 0;
+    color: #CDFAD5;
+    overflow: hidden;
+    transition: max-height 0.2 ease-out;
 }
 
 .footer * {
     background-color: #DD4A48;
     color: #CDFAD5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.15svh;
-    border-radius: 20px;
 }
 
 .footer>*>* {
@@ -273,10 +283,6 @@ img.special-img {
 
     .about-us h1 {
         font-size: 10svw;
-    }
-
-    .footer * * {
-        font-size: 14px;
     }
 
 }
