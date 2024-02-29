@@ -225,6 +225,8 @@ img.special-img {
     border-radius: 20px;
     margin-top: 2svh;
     margin-bottom: 3svh;
+    margin-left: 1svw;
+    margin-right: 1svw;
     width: 95%;
     padding: 1svh;
     grid-template-columns: repeat(3, auto);
