@@ -155,10 +155,11 @@ const domManipulator = (function () {
 
   const logoButton = document.querySelector("#secret-menu");
   logoButton.addEventListener("click", () => {
-    menuButton.innerHTML = "CHECK OUT OUR MENU";
+    menuButton.innerHTML = "TAKE ME BACK!";
     clearBody();
     const secret = document.createElement("p");
-    secret.innerHTML = `You shouldn't be here yet!`;
+    secret.innerHTML = `You found our secret menu! 
+    Unfortunately theres nothing here yet`;
     siteBody.appendChild(secret);
   });
   return { makeHomePage };
