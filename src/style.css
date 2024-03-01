@@ -57,18 +57,17 @@ h2 {
   background-clip: text;
 }
 
-.menubody {
+.site-body {
+  margin-top: 2svh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2svh;
 }
 
-.site-body {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  align-items: center;
+.site-body > p {
+  font-family: Ceviche One;
+  color: #e23121;
+  font-size: 5svh;
 }
 
 .header {
@@ -90,6 +89,9 @@ h2 {
   text-decoration-color: #f9b572;
 }
 
+.menu-image {
+  padding: 1svh;
+}
 .monthly-special {
   display: flex;
   flex-direction: column;
@@ -263,10 +265,6 @@ img.special-img {
   font-size: calc(24px + 0.1svw);
 }
 
-.secret {
-  color: #e23121;
-  margin-top: 2svh;
-}
 @media only screen and (max-width: 500px) {
   .img-container {
     grid-auto-columns: 77%;
