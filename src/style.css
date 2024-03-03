@@ -83,6 +83,9 @@ h2 {
   margin-top: 2svh;
   margin-bottom: 2svh;
   font-size: 5svw;
+  display: flex;
+  gap: 3svw;
+  align-items: center;
 }
 
 .header > h1 > a:hover {
@@ -219,9 +222,7 @@ img.special-img {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   background-color: #dd4a48;
   border-radius: 20px;
   margin-top: 2svh;

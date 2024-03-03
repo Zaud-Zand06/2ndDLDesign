@@ -14,6 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "DL Design",
       template: "./src/index.html",
+      favicon: "./src/the_logo.webp",
     }),
   ],
   output: {
