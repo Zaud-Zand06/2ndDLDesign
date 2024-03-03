@@ -2,6 +2,7 @@ import "./style.css";
 import menuImage from "./DLMenu.jpg";
 import monthlySpecialImage from "./monthlySpecial.jpg";
 import flamesGif from "./flames.gif";
+import logoImage from "./the_logo.webp";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -139,6 +140,7 @@ const domManipulator = (function () {
     makeSpecialCard();
     makeAboutUsCard();
     makeScrollableImages();
+    addGifs();
   }
 
   const menuButton = document.querySelector("#menu-button");
@@ -170,8 +172,8 @@ const domManipulator = (function () {
       gifs[index].src = flamesGif;
     }
   }
-  return { makeHomePage, addGifs };
+  return { makeHomePage };
 })();
 
 domManipulator.makeHomePage();
-domManipulator.addGifs();
+domManipulator.backgroundMaker();

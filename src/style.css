@@ -273,6 +273,7 @@ img.special-img {
 
   .header h1 {
     font-size: 15svw;
+    text-align: right;
   }
 
   .monthly-special h1 {
@@ -293,5 +294,9 @@ img.special-img {
 
   .accordion {
     font-size: 10svw;
+  }
+
+  #small-screen-hidden {
+    visibility: hidden;
   }
 }
