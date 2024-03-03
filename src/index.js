@@ -1,6 +1,7 @@
 import "./style.css";
 import menuImage from "./DLMenu.jpg";
 import monthlySpecialImage from "./monthlySpecial.jpg";
+import flamesGif from "./flames.gif";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -162,7 +163,15 @@ const domManipulator = (function () {
     Unfortunately theres nothing here yet`;
     siteBody.appendChild(secret);
   });
-  return { makeHomePage };
+
+  function addGifs() {
+    const gifs = document.getElementsByClassName("flame-images");
+    for (let index = 0; index < gifs.length; index++) {
+      gifs[index].src = flamesGif;
+    }
+  }
+  return { makeHomePage, addGifs };
 })();
 
 domManipulator.makeHomePage();
+domManipulator.addGifs();

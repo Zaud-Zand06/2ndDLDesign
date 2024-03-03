@@ -83,6 +83,9 @@ h2 {
   margin-top: 2svh;
   margin-bottom: 2svh;
   font-size: 5svw;
+  display: flex;
+  gap: 3svw;
+  align-items: center;
 }
 
 .header > h1 > a:hover {
