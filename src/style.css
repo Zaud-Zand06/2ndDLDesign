@@ -222,9 +222,7 @@ img.special-img {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   background-color: #dd4a48;
   border-radius: 20px;
   margin-top: 2svh;
