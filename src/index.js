@@ -35,6 +35,7 @@ function smoothScroll(element, scrollAmount) {
 }
 
 const domManipulator = (function () {
+  document.body.style.backgroundImage = "./the_logo.webp";
   const siteBody = document.querySelector(".site-body");
 
   function clearBody() {
