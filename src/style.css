@@ -127,7 +127,7 @@ h2 {
 }
 
 .monthly-special h1 {
-  font-size: 5svh;
+  font-size: 5svw;
   margin-bottom: 3svh;
 }
 
@@ -143,7 +143,7 @@ h2 {
 }
 
 .special-card h2 {
-  font-size: 4svh;
+  font-size: 4svw;
 }
 
 .special-card img {
@@ -156,7 +156,7 @@ h2 {
   color: #2c4390;
   margin-left: 2svw;
   margin-right: 2svw;
-  font-size: calc(16px + 1svh);
+  font-size: calc(16px + 1svw);
   gap: 3svw;
 }
 
@@ -174,7 +174,7 @@ h2 {
 }
 
 .about-us h1 {
-  font-size: 5svh;
+  font-size: 5svw;
 }
 
 .about-us p {
@@ -227,7 +227,7 @@ h2 {
   padding: 1svh;
 }
 .accordion {
-  font-size: 4svh;
+  font-size: 4svw;
   padding: 0;
   border: none;
 }
@@ -261,7 +261,7 @@ h2 {
 
 .footer p,
 .footer a {
-  font-size: calc(24px + 0.1svh);
+  font-size: calc(24px + 0.1svw);
 }
 
 @media only screen and (max-width: 500px) {
