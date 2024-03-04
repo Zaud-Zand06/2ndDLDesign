@@ -249,7 +249,7 @@ h2 {
 }
 
 .footer p,
-.footer a {
+q .footer a {
   font-size: calc(24px + 0.1svh);
 }
 
