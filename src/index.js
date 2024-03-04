@@ -104,7 +104,7 @@ const domManipulator = (function () {
     specialCard.appendChild(specialCardH2);
     const specialDescription = document.createElement("p");
     specialDescription.innerHTML =
-      "A specially crafted blend of spices bring the aroma and flavour of New Orleans to Vancouver!";
+      "A specially crafted blend of spices to mix up our menu every month! Check back soon to see what we've got!";
     specialCard.appendChild(specialDescription);
     const specialImage = document.createElement("img");
     specialImage.src = monthlySpecialImage;

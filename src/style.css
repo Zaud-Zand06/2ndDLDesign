@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,6 +6,7 @@
   background-color: #170e3200;
   text-decoration: none;
   margin: 0;
+  text-align: center;
 }
 
 body {
@@ -27,8 +27,10 @@ a:hover {
 }
 
 p {
-  font-family: Poppins sans-serif;
-  background-color: #dd4b4800;
+  font-weight: 900px;
+  background-color: #00000000;
+  color: #000000;
+  font-size: 5svh;
 }
 
 img {
@@ -49,7 +51,7 @@ h2 {
 
 .gradient-text {
   background-color: #e23121;
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-image: linear-gradient(45deg, #f3ec78, #3a9bd8);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -65,10 +67,6 @@ h2 {
   display: block;
   background-image: url(./the_logo.webp);
   height: 800px;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
   filter: blur(5px);
   z-index: -1111;
 }
@@ -78,12 +76,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.site-body > p {
-  font-family: Ceviche One;
-  color: #e23121;
-  font-size: 5svh;
 }
 
 .header {
@@ -117,16 +109,14 @@ h2 {
 .monthly-special {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-top: 2svh;
-  padding: 1%;
-  color: #f9b572;
+  color: #000102;
   border-radius: 15px;
 }
 
 .monthly-special h1 {
-  font-size: 4svw;
+  font-size: 5svh;
   margin-bottom: 3svh;
 }
 
@@ -135,19 +125,14 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #cdfad5;
+  background: #dd4a48;
   border-radius: 25px;
   max-width: 76svw;
+  gap: 2vh;
 }
 
 .special-card h2 {
-  font-size: 3svw;
-  margin-bottom: 2svh;
-}
-
-.special-card p {
-  margin-bottom: 5svh;
-  font-size: 20px;
+  font-size: 4svh;
 }
 
 .special-card img {
@@ -157,38 +142,32 @@ h2 {
 
 .links {
   display: flex;
-  flex-flow: row nowrap;
-  color: #f9b572;
-  justify-content: space-around;
-  align-items: center;
+  color: #2c4390;
   margin-left: 2svw;
   margin-right: 2svw;
-  font-size: calc(16px + 1svw);
+  font-size: calc(16px + 1svh);
   gap: 3svw;
 }
 
 .links > a:hover {
   text-decoration-color: #e23121;
 }
-/* .links a {
-    border:  2px solid white;
-}  for debugging issues with the clickable links*/
 
 .about-us {
   margin: 3svh;
   color: #f9b572;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .about-us h1 {
-  font-size: 4svw;
+  font-size: 5svh;
 }
 
 .about-us p {
   width: 95svw;
-  font-size: calc(15px + 0.390625svw);
 }
 
 .img-container {
@@ -215,29 +194,14 @@ h2 {
   position: relative;
   padding: 4%;
   margin: 4%;
-  background: #cdfad5;
+  background: #dd4a48;
   border-radius: 15px;
-}
-
-.scroll-image-title {
-  position: absolute;
-  font-family: Ceviche One;
-  font-size: 60px;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-  color: #e23121;
 }
 
 .scroll-images img {
   inline-size: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
-}
-
-img.special-img {
-  width: fit-content;
-  height: fit-content;
 }
 
 .footer {
@@ -252,7 +216,7 @@ img.special-img {
   padding: 1svh;
 }
 .accordion {
-  font-size: 4svw;
+  font-size: 4svh;
   padding: 0;
   border: none;
 }
@@ -261,6 +225,7 @@ img.special-img {
 .accordion:hover {
   padding: 5px;
   background-color: #913534;
+  border-radius: 20px;
 }
 
 .panel {
@@ -275,14 +240,17 @@ img.special-img {
   transition: max-height 0.2 ease-out;
 }
 
+.panel p {
+  color: #000000;
+}
+
 .footer * {
-  background-color: #dd4a48;
-  color: #cdfad5;
+  color: #2c4390;
 }
 
 .footer p,
 .footer a {
-  font-size: calc(24px + 0.1svw);
+  font-size: calc(24px + 0.1svh);
 }
 
 @media only screen and (max-width: 500px) {
@@ -292,7 +260,6 @@ img.special-img {
 
   .header h1 {
     font-size: 15svw;
-    text-align: right;
   }
 
   .monthly-special h1 {
