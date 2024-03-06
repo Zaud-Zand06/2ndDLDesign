@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+:root {
+  --header-colour: #e292219d;
+  --body-card-colour: #b8b8b84d;
+  --link-color: #2c4390;
+}
 
 * {
   box-sizing: border-box;
@@ -14,23 +21,25 @@ body {
 }
 
 a {
-  background-color: #dd4b4800;
   color: inherit;
   padding-bottom: 2px;
-  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-decoration: underline 0.15em var(--link-color);
   text-underline-offset: 5px;
   transition: text-decoration-color 300ms;
 }
 
 a:hover {
-  text-decoration-color: inherit;
+  text-decoration-color: #00000000;
 }
 
 p {
-  font-weight: 900px;
-  background-color: #00000000;
+  font-family: "Madimi One", sans-serif;
   color: #000000;
+<<<<<<< HEAD
   font-size: 5svw;
+=======
+  font-size: 2svw;
+>>>>>>> main
 }
 
 img {
@@ -51,7 +60,7 @@ h2 {
 
 .gradient-text {
   background-color: #e23121;
-  background-image: linear-gradient(45deg, #f3ec78, #3a9bd8);
+  background-image: linear-gradient(45deg, #ff0909, #3a9bd8);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -92,31 +101,36 @@ h2 {
 .header {
   display: flex;
   flex-direction: column;
-  width: 98%;
-  height: auto;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  padding-bottom: 2svw;
+  background-color: var(--header-colour);
 }
 
 .header h1 {
-  margin-top: 2svh;
-  margin-bottom: 2svh;
-  font-size: 5svw;
   display: flex;
-  gap: 3svw;
   align-items: end;
+  font-size: 5svw;
+  margin-bottom: 2svh;
+  gap: 10px;
 }
-.header img {
-  width: 15svw;
+.header > h1 > a {
+  text-decoration-color: #e2312100;
 }
 
 .header > h1 > a:hover {
-  text-decoration-color: #f9b572;
+  text-decoration-color: #e23121;
+}
+
+.header img {
+  width: 10svw;
 }
 
 .menu-image {
   padding: 1svh;
 }
+
 .monthly-special {
   display: flex;
   flex-direction: column;
@@ -136,7 +150,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #dd4a48;
+  background: var(--body-card-colour);
   border-radius: 25px;
   max-width: 76svw;
   gap: 2vh;
@@ -153,6 +167,7 @@ h2 {
 
 .links {
   display: flex;
+  align-items: center;
   color: #2c4390;
   margin-left: 2svw;
   margin-right: 2svw;
@@ -170,7 +185,7 @@ h2 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-color: var(--body-card-colour);
 }
 
 .about-us h1 {
@@ -217,7 +232,7 @@ h2 {
 
 .footer {
   display: grid;
-  background-color: #dd4a48;
+  grid-template-columns: 1fr 1fr 1fr;
   border-radius: 20px;
   margin-top: 2svh;
   margin-bottom: 3svh;
@@ -225,11 +240,29 @@ h2 {
   margin-right: 1svw;
   width: 95%;
   padding: 1svh;
+  background-color: var(--header-colour);
 }
+
+.footer > * > a {
+  font-size: 3svw;
+}
+
+.grid-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-box > .panel > a {
+  font-size: 2svw;
+  text-underline-offset: 6px;
+  color: var(--link-color);
+}
+
 .accordion {
   font-size: 4svw;
   padding: 0;
   border: none;
+  color: var(--link-color);
 }
 
 .active,
@@ -241,9 +274,7 @@ h2 {
 
 .panel {
   padding: 0 18px;
-  background-color: #dd4a48;
   max-height: 0;
-  color: #cdfad5;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -251,26 +282,21 @@ h2 {
   transition: max-height 0.2 ease-out;
 }
 
-.panel p {
-  color: #000000;
-}
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 4svw;
+  }
 
-.footer * {
-  color: #2c4390;
-}
-
-.footer p,
-.footer a {
-  font-size: calc(24px + 0.1svw);
-}
-
-@media only screen and (max-width: 500px) {
   .img-container {
     grid-auto-columns: 77%;
   }
 
   .header h1 {
     font-size: 15svw;
+  }
+
+  .header img {
+    width: 15svw;
   }
 
   .monthly-special h1 {
@@ -289,7 +315,16 @@ h2 {
     font-size: 10svw;
   }
 
+  .footer > * > a {
+    font-size: 5svw;
+  }
+
   .accordion {
     font-size: 10svw;
+  }
+
+  .grid-box > .panel > a {
+    font-size: 3svw;
+    text-underline-offset: 6px;
   }
 }
