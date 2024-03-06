@@ -146,13 +146,13 @@ const domManipulator = (function () {
 
   const menuButton = document.querySelector("#menu-button");
   menuButton.addEventListener("click", () => {
-    if (menuButton.innerHTML == "CHECK OUT OUR MENU") {
+    if (menuButton.innerHTML == "MENU") {
       //refactor this into seperate function
       menuButton.innerHTML = "TAKE ME BACK!";
       clearBody();
       makeMenuBody();
     } else {
-      menuButton.innerHTML = "CHECK OUT OUR MENU";
+      menuButton.innerHTML = "MENU";
       makeHomePage();
     }
   });
