@@ -311,7 +311,16 @@ h2 {
     font-size: 10svw;
   }
 
+  .footer > * > a {
+    font-size: 5svw;
+  }
+
   .accordion {
     font-size: 10svw;
+  }
+
+  .grid-box > .panel > a {
+    font-size: 3svw;
+    text-underline-offset: 6px;
   }
 }
