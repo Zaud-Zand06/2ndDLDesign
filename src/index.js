@@ -177,4 +177,3 @@ const domManipulator = (function () {
 })();
 
 domManipulator.makeHomePage();
-domManipulator.backgroundMaker();
