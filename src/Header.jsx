@@ -9,8 +9,12 @@ function Header(props) {
   const UBCLink = "https://dl-chicken-ubc.square.site/";
 
   const handleMenuClick = () => {
-    props.setMainScreen("menu");
-    console.log("working");
+    console.log(props.mainScreen);
+    if (props.mainScreen == "menu") {
+      props.setMainScreen("homepage");
+    } else {
+      props.setMainScreen("menu");
+    }
   };
 
   return (
@@ -37,7 +41,7 @@ function Header(props) {
             UBC ORDERING
           </a>
           <a id="menuButton" onClick={handleMenuClick}>
-            MENU
+            {props.mainScreen == "homepage" ? "MENU" : "TAKE ME BACK!"}
           </a>
         </div>
       </div>

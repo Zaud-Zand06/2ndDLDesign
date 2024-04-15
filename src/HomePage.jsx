@@ -30,7 +30,7 @@ function HomePage(props) {
   );
   return (
     <>
-      {props.mainScreen == "HomePage" ? (
+      {props.mainScreen == "homepage" ? (
         <MainScreen />
       ) : (
         <MenuScreen images={scrollImages} />

@@ -6,11 +6,11 @@ import Footer from "./Footer";
 import HomePage from "./HomePage";
 
 const App = () => {
-  const [mainScreen, setMainScreen] = useState("HomePage");
+  const [mainScreen, setMainScreen] = useState("homepage");
 
   return (
     <>
-      <Header setMainScreen={setMainScreen} />
+      <Header mainScreen={mainScreen} setMainScreen={setMainScreen} />
       <HomePage mainScreen={mainScreen} />
       <Footer />
     </>
