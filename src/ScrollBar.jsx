@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 function ScrollBar({ images }) {
+  const [carouselWidth, setCarouselWidth] = useState(window.innerWidth * 0.75);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCarouselWidth(window.innerWidth * 0.75);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <Carousel
         autoPlay={true}
+        width={carouselWidth}
         infiniteLoop={true}
         showStatus={false}
         emulateTouch={true}
