@@ -32,11 +32,21 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
     ],
   },
   optimization: {
     splitChunks: {
       chunks: "all",
     },
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
   },
 };
