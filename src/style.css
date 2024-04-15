@@ -201,12 +201,16 @@ h2 {
 .slide {
   padding: 2%;
   background: #dd4a48;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .slide img {
   aspect-ratio: 4/3;
   object-fit: cover;
+}
+
+.thumb img {
+  border-radius: 0px;
 }
 
 .footer {

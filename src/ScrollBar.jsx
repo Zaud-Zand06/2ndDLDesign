@@ -20,6 +20,7 @@ function ScrollBar({ images }) {
   return (
     <>
       <Carousel
+        showThumbs={false}
         autoPlay={true}
         width={carouselWidth}
         infiniteLoop={true}
