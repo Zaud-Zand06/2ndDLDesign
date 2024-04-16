@@ -64,7 +64,7 @@ function MenuScreen() {
   useEffect(() => {
     const handleResize = () => {
       window.innerWidth <= 700
-        ? setCarouselWidth(window.innerWidth * 0.98)
+        ? setCarouselWidth(window.innerWidth * 0.6)
         : setCarouselWidth(window.innerWidth * 0.5);
     };
 
