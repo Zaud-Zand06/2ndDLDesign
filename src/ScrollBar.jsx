@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+const scrollImagesContext = require.context(
+  "./scroll-images",
+  false,
+  /\.(png|jpe?g|svg)$/
+);
+const scrollImages = scrollImagesContext.keys().map(scrollImagesContext);
 
-function ScrollBar({ images }) {
-  const [carouselWidth, setCarouselWidth] = useState(window.innerWidth * 0.75);
+function ScrollBar() {
+  const [carouselWidth, setCarouselWidth] = useState(window.innerWidth * 0.5);
 
   useEffect(() => {
     const handleResize = () => {
-      setCarouselWidth(window.innerWidth * 0.75);
+      setCarouselWidth(window.innerWidth * 0.5);
     };
 
     window.addEventListener("resize", handleResize);
@@ -27,7 +33,7 @@ function ScrollBar({ images }) {
         showStatus={false}
         emulateTouch={true}
       >
-        {images.map((image, index) => (
+        {scrollImages.map((image, index) => (
           <img key={index} src={image} alt="" />
         ))}
       </Carousel>
@@ -36,15 +42,3 @@ function ScrollBar({ images }) {
 }
 
 export default ScrollBar;
-
-{
-  /* <>
-  <div className="imgContainer inlineSnaps">
-    {images.map((image) => (
-      <div className="scrollImages">
-        <img src={image} alt="" />
-      </div>
-    ))}
-  </div>
-</> */
-}

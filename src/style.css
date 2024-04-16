@@ -5,6 +5,8 @@
   --header-colour: #e292219d;
   --body-card-colour: #b8b8b84d;
   --link-color: #2c4390;
+  --border-color: #5151514d;
+  --title-border-color: #fec022;
 }
 
 * {
@@ -17,6 +19,7 @@
 
 body {
   height: 100%;
+  width: 100svw;
 }
 
 a {
@@ -46,9 +49,12 @@ img {
 h1 {
   color: #e23121;
   background: #dd4b4800;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--title-border-color);
 }
 
 h2 {
+  color: #e23121;
   background-color: #dd4b4800;
 }
 
@@ -103,6 +109,7 @@ h2 {
 }
 
 .header h1 {
+  -webkit-text-stroke-width: 0px;
   display: flex;
   align-items: end;
   font-size: 5svw;
@@ -155,9 +162,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid var(--border-color);
   background: var(--body-card-colour);
   border-radius: 25px;
-  max-width: 76svw;
+  max-width: 50svw;
   gap: 2vh;
 }
 
@@ -188,8 +196,9 @@ h2 {
 .aboutUsCard {
   padding: 1rem;
   border-radius: 25px;
+  border: 2px solid var(--border-color);
   background-color: var(--body-card-colour);
-  max-width: 76svw;
+  max-width: 50svw;
 }
 
 .carousel-root {
@@ -198,15 +207,29 @@ h2 {
   align-items: center;
 }
 
+.menuCategory h1 {
+  font-size: 5svw;
+}
+
 .slide {
   padding: 2%;
-  background: #dd4a48;
+  padding-bottom: 3%;
+  border: 2px solid var(--border-color);
+  background-color: var(--body-card-colour);
   border-radius: 25px;
+}
+
+.slide h2 {
+  font-size: 3svw;
 }
 
 .slide img {
   aspect-ratio: 4/3;
   object-fit: cover;
+}
+
+.thumb {
+  border-color: var(--border-color);
 }
 
 .thumb img {
