@@ -57,11 +57,15 @@ const tendersItemInformation = [
 ];
 
 function MenuScreen() {
-  const [carouselWidth, setCarouselWidth] = useState(window.innerWidth * 0.5);
+  const [carouselWidth, setCarouselWidth] = useState(
+    window.innerWidth <= 700 ? window.innerWidth * 0.6 : window.innerWidth * 0.5
+  );
 
   useEffect(() => {
     const handleResize = () => {
-      setCarouselWidth(window.innerWidth * 0.5);
+      window.innerWidth <= 700
+        ? setCarouselWidth(window.innerWidth * 0.98)
+        : setCarouselWidth(window.innerWidth * 0.5);
     };
 
     window.addEventListener("resize", handleResize);

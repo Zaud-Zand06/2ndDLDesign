@@ -207,10 +207,6 @@ h2 {
   align-items: center;
 }
 
-.menuCategory h1 {
-  font-size: 5svw;
-}
-
 .slide {
   padding: 2%;
   padding-bottom: 3%;
@@ -260,7 +256,7 @@ h2 {
     font-size: 4svw;
   }
 
-  .header h1 {
+  #root .header h1 {
     font-size: 15svw;
   }
 
@@ -268,11 +264,11 @@ h2 {
     width: 15svw;
   }
 
-  .monthlySpecial h1 {
+  #root h1 {
     font-size: 10svw;
   }
 
-  .monthlySpecial h2 {
+  #root h2 {
     font-size: 8svw;
   }
 
@@ -284,7 +280,7 @@ h2 {
     max-width: 98%;
   }
 
-  .aboutUs h1 {
+  .menuCategory h1 {
     font-size: 10svw;
   }
 

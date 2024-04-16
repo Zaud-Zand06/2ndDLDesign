@@ -9,11 +9,17 @@ const scrollImagesContext = require.context(
 const scrollImages = scrollImagesContext.keys().map(scrollImagesContext);
 
 function ScrollBar() {
-  const [carouselWidth, setCarouselWidth] = useState(window.innerWidth * 0.5);
+  const [carouselWidth, setCarouselWidth] = useState(
+    window.innerWidth <= 700
+      ? window.innerWidth * 0.98
+      : window.innerWidth * 0.5
+  );
 
   useEffect(() => {
     const handleResize = () => {
-      setCarouselWidth(window.innerWidth * 0.5);
+      window.innerWidth <= 700
+        ? setCarouselWidth(window.innerWidth * 0.98)
+        : setCarouselWidth(window.innerWidth * 0.5);
     };
 
     window.addEventListener("resize", handleResize);
@@ -32,6 +38,7 @@ function ScrollBar() {
         infiniteLoop={true}
         showStatus={false}
         emulateTouch={true}
+        className="mainCarousel"
       >
         {scrollImages.map((image, index) => (
           <img key={index} src={image} alt="" />
