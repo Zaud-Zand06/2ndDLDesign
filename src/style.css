@@ -128,6 +128,10 @@ h2 {
   width: 10svw;
 }
 
+.menuCategory > h1 {
+  font-size: 5svw;
+}
+
 .links {
   display: flex;
   align-items: center;
@@ -137,10 +141,6 @@ h2 {
   margin-right: 2svw;
   font-size: calc(16px + 1svw);
   gap: 3svw;
-}
-
-.menu-image {
-  padding: 1svh;
 }
 
 .monthlySpecial {
@@ -209,7 +209,6 @@ h2 {
 
 .slide {
   padding: 2%;
-  padding-bottom: 3%;
   border: 2px solid var(--border-color);
   background-color: var(--body-card-colour);
   border-radius: 25px;
@@ -248,7 +247,13 @@ h2 {
 }
 
 .footer > * > a {
-  font-size: 3svw;
+  font-family: "Madimi One", sans-serif;
+  font-size: 2svw;
+}
+
+.locationCard > a {
+  font-family: "Madimi One", sans-serif;
+  font-size: 2svw;
 }
 
 @media only screen and (max-width: 700px) {

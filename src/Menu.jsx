@@ -15,26 +15,35 @@ const sandoItemInformation = [
     key: 0,
     title: "The OG",
     description:
-      "The original Down Low Chicken Sando! Choose your heat level and piece of bird!",
+      "DL Sauce, Sweet and Sour Slaw, Pickled Onions and Bread and Butter Pickles! Choose your heat level on a leg or a breast!",
     price: "18",
   },
   {
     key: 1,
     title: "The Rookie",
-    description: "Chimichurri! Choose your heat level and piece of bird!",
+    description:
+      "Shredduce, Tomato and Chimichurri! Classic chicken on a leg or a breast!",
     price: "18",
   },
   {
     key: 2,
     title: "The Jerk",
     description:
-      "The original Down Low Chicken Sando! Choose your heat level and piece of bird!",
+      "Jerk Mayo, Slaw, Pickled Onions and a Tomato! Jerk dusted on a leg or a breast!",
     price: "18",
   },
   {
     key: 3,
-    title: "The Hurricane",
-    description: "Our monthly Sando!",
+    title: "The Chip and Dip",
+    description:
+      "Shredduce and a Tomato! Cool Ranch dust on a leg or a breast!",
+    price: "18",
+  },
+  {
+    key: 4,
+    title: "The Boujee",
+    description:
+      "Truffle Mayo, Slaw, Pickled Onions and Pickles! Spiced Truffle dust on a leg or a breast!",
     price: "18",
   },
 ];
@@ -44,17 +53,19 @@ const tendersItemInformation = [
     key: 0,
     title: "Chicken Tenders",
     description:
-      "most tender cut of the breast! Choose your heat level and choice of sauce!",
-    price: "4 tenders - 15, 7 tenders - 18",
+      "The most tender cut of the breast! Choose your heat level and choice of sauce!",
+    price: "4 tenders - 15, 7 tenders - 21",
   },
   {
     key: 1,
     title: "Nuggets",
     description:
-      "Pop corn chicken cut fresh from our kitchen! Choose your heat level and choice of sauce!",
-    price: "10-12 nuggets - 13",
+      "Popcorn chicken cut fresh from our kitchen! Choose your heat level and choice of sauce!",
+    price: "10-12 nuggets - 11",
   },
 ];
+
+const drinksItemInformation = [];
 
 function MenuScreen() {
   const [carouselWidth, setCarouselWidth] = useState(
@@ -98,8 +109,8 @@ function MenuScreen() {
                   <h2 className="gradientText">
                     {sandoItemInformation[index].title}
                   </h2>
-                  <p>{sandoItemInformation[index].description}</p>
                   <p>{sandoItemInformation[index].price}</p>
+                  <p>{sandoItemInformation[index].description}</p>
                 </div>
               ) : (
                 <div className="menuItem">
@@ -133,8 +144,8 @@ function MenuScreen() {
                   <h2 className="gradientText">
                     {tendersItemInformation[index].title}
                   </h2>
-                  <p>{tendersItemInformation[index].description}</p>
                   <p>{tendersItemInformation[index].price}</p>
+                  <p>{tendersItemInformation[index].description}</p>
                 </div>
               ) : (
                 <></>
@@ -157,6 +168,9 @@ function MenuScreen() {
             {menuImages.map((image, index) => (
               <div key={index} className="menuItem">
                 <img src={image} />
+                <h2 className="gradientText">Drink Information</h2>
+                <p>Drink Pricing</p>
+                <p>Drink Description</p>
               </div>
             ))}
           </Carousel>
