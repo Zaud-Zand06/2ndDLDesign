@@ -237,7 +237,7 @@ h3 {
   background-color: var(--header-colour);
   color: var(--link-color);
   font-size: 3svw;
-  margin-bottom: 2svw;
+  padding-bottom: 2svw;
 }
 
 .footerInfo {
