@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
 
 :root {
-  --header-colour: #e292219d;
+  --header-colour: #e29221b3;
   --body-card-colour: #b8b8b84d;
   --link-color: #2c4390;
   --border-color: #5151514d;
@@ -18,6 +18,8 @@
 }
 
 body {
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   width: 100svw;
 }
@@ -58,6 +60,10 @@ h2 {
   background-color: #dd4b4800;
 }
 
+h3 {
+  color: #e23121;
+}
+
 .gradientText {
   background-color: #e23121;
   background-image: linear-gradient(45deg, #ff0909, #3a9bd8);
@@ -91,21 +97,14 @@ h2 {
   }
 }
 
-.root {
-  display: flex;
-  flex-direction: column;
-  gap: 2svh;
-  align-items: center;
-}
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
   padding-bottom: 2svw;
   background-color: var(--header-colour);
+  width: 100svw;
 }
 
 .header h1 {
@@ -232,21 +231,46 @@ h2 {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
-  border-radius: 20px;
+  display: grid;
   margin-top: 2svh;
-  margin-bottom: 3svh;
-  margin-left: 1svw;
-  margin-right: 1svw;
-  width: 95%;
+  width: 100svw;
   padding: 1svh;
   background-color: var(--header-colour);
   color: var(--link-color);
   font-size: 3svw;
 }
 
-.footer > * > a {
+.footerInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3svh;
+}
+
+.map {
+  position: relative;
+  padding-bottom: 35%;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+.contactFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer > div > div > a {
   font-family: "Madimi One", sans-serif;
   font-size: 2svw;
 }
@@ -293,7 +317,20 @@ h2 {
     font-size: 5svw;
   }
 
-  .footer > * > a {
-    font-size: 5svw;
+  .footerInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .footerInfo h3 {
+    font-size: 6svw;
+  }
+
+  .footer > div > div > a {
+    font-family: "Madimi One", sans-serif;
+    font-size: 4svw;
+  }
+
+  .map {
+    padding-bottom: 50%;
   }
 }
