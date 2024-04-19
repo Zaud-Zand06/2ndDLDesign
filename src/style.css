@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width: 99svw;
+  max-width: 99svw;
 }
 
 a {
@@ -231,11 +231,9 @@ h3 {
 }
 
 .footer {
-  overflow-y: hidden;
   display: grid;
-  margin-top: 2svh;
-  width: 100%;
-  padding: 1svh;
+  margin-top: 2svw;
+  width: 100svw;
   background-color: var(--header-colour);
   color: var(--link-color);
   font-size: 3svw;
@@ -333,5 +331,9 @@ h3 {
 
   .map {
     padding-bottom: 50%;
+  }
+
+  .map iframe {
+    width: 90%;
   }
 }
